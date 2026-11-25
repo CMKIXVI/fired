@@ -1,13 +1,93 @@
 {
   "schema_version": 1,
   "project": "Fired Global Tech Layoffs Tracker",
-  "updated_at": null,
+  "updated_at": "2026-11-25",
   "methodology": {
     "deduplication": "One canonical record per distinct layoff event; corroborating source URLs are retained in the event record.",
     "headcount": "Only numeric figures with a source are included in aggregate headcounts. Undisclosed counts are excluded.",
-    "figure_status_values": ["confirmed", "reported", "estimated", "undisclosed"],
-    "event_status_values": ["announced", "proposed", "completed", "cancelled", "unknown"],
-    "dates": "event_date records when the workforce action was announced or took effect, as explicitly described by sources; publication dates belong to individual sources."
+    "figure_status_values": [
+      "confirmed",
+      "reported",
+      "estimated",
+      "undisclosed"
+    ],
+    "event_status_values": [
+      "announced",
+      "proposed",
+      "completed",
+      "cancelled",
+      "unknown"
+    ],
+    "dates": "event_date records when the workforce action was announced or took effect, as explicitly described by sources; publication dates belong to individual source records.",
+    "initial_population_note": "Initial records below were verified in the immediately preceding research cycle but had not yet been published because the site and deployment workflow were not then available."
   },
-  "events": []
+  "events": [
+    {
+      "id": "enphase-energy-2026-11-20",
+      "company_id": "enphase-energy",
+      "company": "Enphase Energy",
+      "headline": "Enphase to reduce headcount by approximately 320 employees, or 12% of its workforce",
+      "event_date": "2026-11-20",
+      "event_status": "announced",
+      "country_region": "Global",
+      "geography_note": "Country-level breakdown not disclosed; company headquarters in Fremont, California, United States.",
+      "sector": "Energy Technology",
+      "employees_affected": 320,
+      "headcount_qualifier": "approximately",
+      "percentage_affected": 12,
+      "percentage_status": "confirmed",
+      "figure_status": "confirmed",
+      "figure_note": "The company disclosed approximately 320 employees and approximately 12% of its workforce in an SEC Form 8-K.",
+      "sources": [
+        {
+          "publisher": "U.S. Securities and Exchange Commission",
+          "headline": "Form 8-K — Enphase Energy, Inc.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1463101/000146310126000112/enph-20261120.htm",
+          "publication_date": "2026-11-20",
+          "source_type": "regulatory_filing"
+        },
+        {
+          "publisher": "Enphase Energy",
+          "headline": "Form 8-K for Enphase Energy Inc filed 11/20/2026",
+          "url": "https://newsroom.enphase.com/static-files/933e08fb-16ec-4899-916c-58ce3b1e388e",
+          "publication_date": "2026-11-20",
+          "source_type": "company_filing"
+        }
+      ]
+    },
+    {
+      "id": "skyscanner-2026-11-23",
+      "company_id": "skyscanner",
+      "company": "Skyscanner",
+      "headline": "Skyscanner proposes cuts of up to 150 roles, around 10% of its workforce",
+      "event_date": "2026-11-23",
+      "event_status": "proposed",
+      "country_region": "Global",
+      "geography_note": "Company-wide scope and country breakdown not disclosed; headquartered in Edinburgh, United Kingdom.",
+      "sector": "Travel Technology",
+      "employees_affected": 150,
+      "headcount_qualifier": "up to / reported",
+      "percentage_affected": 10,
+      "percentage_status": "reported",
+      "figure_status": "reported",
+      "figure_note": "The company confirmed that changes were proposed but did not confirm a headcount. STV reported up to 150 roles and approximately 10% of the workforce; Travel Gossip separately reported around 150.",
+      "sources": [
+        {
+          "publisher": "STV News",
+          "headline": "Skyscanner to cut 150 jobs as more holidaymakers turn to AI",
+          "url": "https://news.stv.tv/east-central/skyscanner-to-cut-around-150-jobs-as-more-holidaymakers-turn-to-ai-for-inspiration",
+          "publication_date": "2026-11-23",
+          "updated_date": "2026-11-24",
+          "source_type": "news_report"
+        },
+        {
+          "publisher": "Travel Gossip",
+          "headline": "Skyscanner to axe 10% of staff as AI reshapes travel search",
+          "url": "https://travelgossip.co.uk/latestnews/skyscanner-to-axe-10-of-staff-as-ai-reshapes-travel-search/",
+          "publication_date": "2026-11-24",
+          "source_type": "news_report"
+        }
+      ]
+    }
+  ]
 }
