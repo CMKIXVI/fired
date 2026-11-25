@@ -53,7 +53,7 @@ function renderAI(){
     return '<tr><td><span class="company-name">'+safe(e.company)+'</span><span class="event-title">'+safe(e.ai_attribution_basis||"AI attribution recorded")+'</span></td><td>'+safe(dateFmt(e.event_date))+'</td><td>'+safe(e.country_region||"Undisclosed")+'</td><td class="people-cell">'+count+'</td><td><span class="evidence-badge reported">'+safe(e.ai_attribution_status.toUpperCase())+'</span></td><td>'+links+'</td></tr>';
   }).join(""):'<tr><td colspan="6" class="empty-row">No AI-attributed events have been classified yet.</td></tr>';
 }
-\nfunction renderSectors(){
+function renderSectors(){
   const root=document.getElementById("sector-grid"),map={};
   events.forEach(e=>{const k=e.sector||"Unclassified";map[k]=(map[k]||0)+1});
   const rows=Object.entries(map).sort((a,b)=>b[1]-a[1]);
