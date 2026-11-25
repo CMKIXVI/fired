@@ -18,7 +18,10 @@ function renderKPIs(meta={}){
   setText("total-events",fmt(events.length));
   setText("total-companies",fmt(new Set(events.map(e=>e.company_id||e.company).filter(Boolean)).size));
   setText("total-regions",fmt(new Set(events.map(e=>e.country_region).filter(Boolean)).size));
-  setText("people-foot",known.length+" events with usable headcounts · "+(events.length-known.length)+" undisclosed");
+  const confirmed=events.filter(e=>e.figure_status==="confirmed"&&Number.isFinite(e.employees_affected)).reduce((a,e)=>a+e.employees_affected,0);
+  const reported=events.filter(e=>["reported","estimated"].includes(e.figure_status)&&Number.isFinite(e.employees_affected)).reduce((a,e)=>a+e.employees_affected,0);
+  const undisclosed=events.filter(e=>!Number.isFinite(e.employees_affected)).length;
+  setText("people-foot",fmt(confirmed)+" confirmed · "+fmt(reported)+" reported / estimated · "+undisclosed+" undisclosed");
   setText("updated-at",meta.updated_at?"UPDATED "+meta.updated_at:"AWAITING FIRST VERIFIED DATA");
 }
 function renderMonthly(){
@@ -48,7 +51,7 @@ function renderTable(){
   const rows=events.filter(e=>(!q||[e.company,e.headline,e.country_region,e.sector].join(" ").toLowerCase().includes(q))&&(!sector||e.sector===sector)&&(!region||e.country_region===region)&&(!year||(e.event_date||"").startsWith(year))).sort((a,b)=>(b.event_date||"").localeCompare(a.event_date||""));
   setText("result-count",rows.length+" EVENT"+(rows.length===1?"":"S"));
   const body=document.getElementById("events-body");
-  body.innerHTML=rows.length?rows.map(e=>'<tr><td><span class="company-name">'+safe(e.company)+'</span><span class="event-title">'+safe(e.headline||"Layoff event")+'</span></td><td>'+safe(dateFmt(e.event_date))+'</td><td>'+safe(e.country_region||"Undisclosed")+'</td><td>'+safe(e.sector||"Unclassified")+'</td><td class="people-cell">'+(Number.isFinite(e.employees_affected)?fmt(e.employees_affected):"Undisclosed")+(e.percentage_affected!=null?' <small>('+safe(e.percentage_affected)+'%)</small>':"")+'</td><td><span class="evidence-badge '+safe(e.figure_status||"undisclosed")+'">'+safe((e.figure_status||"undisclosed").toUpperCase())+'</span></td></tr>').join(""):'<tr><td colspan="6" class="empty-row">No events match these filters.</td></tr>';
+  body.innerHTML=rows.length?rows.map(e=>{const links=(Array.isArray(e.sources)?e.sources:[]).filter(s=>typeof s.url==="string"&&s.url.startsWith("https://")).map((s,i)=>'<a class="source-link" href="'+safe(s.url)+'" target="_blank" rel="noopener noreferrer">'+safe(s.publisher||("Source "+(i+1)))+' ↗</a>').join(' <span class="source-sep">·</span> ');return '<tr><td><span class="company-name">'+safe(e.company)+'</span><span class="event-title">'+safe(e.headline||"Layoff event")+'</span>'+(links?'<span class="event-sources">'+links+'</span>':"")+'</td><td>'+safe(dateFmt(e.event_date))+'</td><td>'+safe(e.country_region||"Undisclosed")+'</td><td>'+safe(e.sector||"Unclassified")+'</td><td class="people-cell">'+(Number.isFinite(e.employees_affected)?fmt(e.employees_affected):"Undisclosed")+(e.percentage_affected!=null?' <small>('+safe(e.percentage_affected)+'%)</small>':"")+'</td><td><span class="evidence-badge '+safe(e.figure_status||"undisclosed")+'">'+safe((e.figure_status||"undisclosed").toUpperCase())+'</span></td></tr>'}).join(""):'<tr><td colspan="6" class="empty-row">No events match these filters.</td></tr>';
 }
 async function init(){
   ["search","sector-filter","region-filter","year-filter"].forEach(id=>document.getElementById(id).addEventListener(id==="search"?"input":"change",renderTable));
