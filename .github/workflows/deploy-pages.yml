@@ -1,0 +1,51 @@
+name: Deploy Fired to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+      - name: Validate tracker data
+        run: |
+          python - <<'PY'
+          import json
+          with open("data/layoffs.json", encoding="utf-8") as f:
+              data = json.load(f)
+          assert data.get("schema_version") == 1
+          assert isinstance(data.get("events"), list)
+          required = {"id", "company", "figure_status"}
+          ids = set()
+          for event in data["events"]:
+              assert required.issubset(event), f"Missing required fields: {event}"
+              assert event["id"] not in ids, f"Duplicate event id: {event['id']}"
+              ids.add(event["id"])
+              assert event["figure_status"] in {"confirmed", "reported", "estimated", "undisclosed"}
+          print(f"Validated {len(ids)} layoff events")
+          PY
+      - name: Upload site
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+      - name: Deploy site
+        id: deployment
+        uses: actions/deploy-pages@v4
