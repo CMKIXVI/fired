@@ -19,7 +19,7 @@
       "unknown"
     ],
     "dates": "event_date records when the workforce action was announced or took effect, as explicitly described by sources; publication dates belong to individual source records.",
-    "initial_population_note": "Initial records below were verified in the immediately preceding research cycle but had not yet been published because the site and deployment workflow were not then available."
+    "initial_population_note": "Initial population includes Enphase Energy and Skyscanner records verified in the immediately preceding research cycle but not yet published, plus the Oracle European Works Council proposal discovered during catch-up research. The Oracle figure is an unverified reported maximum, not confirmed completed layoffs."
   },
   "events": [
     {
@@ -85,6 +85,40 @@
           "headline": "Skyscanner to axe 10% of staff as AI reshapes travel search",
           "url": "https://travelgossip.co.uk/latestnews/skyscanner-to-axe-10-of-staff-as-ai-reshapes-travel-search/",
           "publication_date": "2026-11-24",
+          "source_type": "news_report"
+        }
+      ]
+    },
+    {
+      "id": "oracle-europe-2026-11-24",
+      "company_id": "oracle",
+      "company": "Oracle",
+      "headline": "Oracle reportedly proposes up to 1,390 additional job cuts across the European Economic Area",
+      "event_date": "2026-11-24",
+      "event_date_note": "Date of the European Works Council memo; not the date of completed layoffs.",
+      "event_status": "proposed",
+      "country_region": "European Economic Area",
+      "geography_note": "Country-by-country allocation not disclosed; national consultation processes remain pending.",
+      "sector": "Enterprise Software / Cloud Infrastructure",
+      "employees_affected": 1390,
+      "headcount_qualifier": "up to / reported proposal",
+      "percentage_affected": null,
+      "percentage_status": "undisclosed",
+      "figure_status": "reported",
+      "figure_note": "The Next Web reported an internal European Works Council memo proposing up to 1,390 cuts. TNW said it could not independently verify the memo; Oracle had been approached for comment. No individual redundancies were final and country-level consultations remain pending.",
+      "sources": [
+        {
+          "publisher": "The Next Web",
+          "headline": "Oracle plans third round of European job cuts in a year, leaked memo says",
+          "url": "https://thenextweb.com/news/oracle-european-job-cuts-third-round",
+          "publication_date": "2026-11-24",
+          "source_type": "news_report"
+        },
+        {
+          "publisher": "Le Monde Informatique",
+          "headline": "Oracle envisage jusqu’à 1 390 suppressions de postes supplémentaires en Europe",
+          "url": "https://www.lemondeinformatique.fr/it-direction/oracle-envisage-jusqu-a-1-390-suppressions-de-postes-supplementaires-en-europe",
+          "publication_date": "2026-11-25",
           "source_type": "news_report"
         }
       ]
