@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "project": "Fired Global Tech Layoffs Tracker",
+  "updated_at": null,
+  "methodology": {
+    "deduplication": "One canonical record per distinct layoff event; corroborating source URLs are retained in the event record.",
+    "headcount": "Only numeric figures with a source are included in aggregate headcounts. Undisclosed counts are excluded.",
+    "figure_status_values": ["confirmed", "reported", "estimated", "undisclosed"],
+    "event_status_values": ["announced", "proposed", "completed", "cancelled", "unknown"],
+    "dates": "event_date records when the workforce action was announced or took effect, as explicitly described by sources; publication dates belong to individual sources."
+  },
+  "events": []
+}
