@@ -40,7 +40,20 @@ function renderYears(){
   const max=Math.max(...years.map(y=>map[y]),1);
   root.innerHTML=years.map(y=>'<div class="year-item '+(y===String(new Date().getFullYear())?'current':'')+'"><div class="year-count">'+fmt(map[y])+'</div><div class="year-bar-wrap"><div class="year-bar" style="height:'+Math.max(3,map[y]/max*85)+'px"></div></div><div class="year-label">'+y+'</div></div>').join("");
 }
-function renderSectors(){
+
+function renderAI(){
+  const rows=events.filter(e=>["reported","confirmed","estimated"].includes(e.ai_attribution_status));
+  const total=rows.filter(e=>Number.isFinite(e.employees_affected)).reduce((n,e)=>n+e.employees_affected,0);
+  setText("ai-result-count",rows.length+" EVENT"+(rows.length===1?"":"S"));
+  setText("ai-events",fmt(rows.length));setText("ai-people",rows.length?fmt(total):"—");
+  const body=document.getElementById("ai-events-body");
+  body.innerHTML=rows.length?rows.sort((a,b)=>(b.event_date||"").localeCompare(a.event_date||"")).map(e=>{
+    const links=(e.ai_attribution_sources||[]).map((u,i)=>'<a class="source-link" href="'+safe(u)+'" target="_blank" rel="noopener noreferrer">'+(i===0?"Coverage":"Corroboration")+' ↗</a>').join(" · ");
+    const count=Number.isFinite(e.employees_affected)?(String(e.headcount_qualifier||"").toLowerCase().includes("up to")?"Up to ":"≈ ")+fmt(e.employees_affected):"Undisclosed";
+    return '<tr><td><span class="company-name">'+safe(e.company)+'</span><span class="event-title">'+safe(e.ai_attribution_basis||"AI attribution recorded")+'</span></td><td>'+safe(dateFmt(e.event_date))+'</td><td>'+safe(e.country_region||"Undisclosed")+'</td><td class="people-cell">'+count+'</td><td><span class="evidence-badge reported">'+safe(e.ai_attribution_status.toUpperCase())+'</span></td><td>'+links+'</td></tr>';
+  }).join(""):'<tr><td colspan="6" class="empty-row">No AI-attributed events have been classified yet.</td></tr>';
+}
+\nfunction renderSectors(){
   const root=document.getElementById("sector-grid"),map={};
   events.forEach(e=>{const k=e.sector||"Unclassified";map[k]=(map[k]||0)+1});
   const rows=Object.entries(map).sort((a,b)=>b[1]-a[1]);
@@ -58,7 +71,7 @@ async function init(){
   try{
     const response=await fetch(DATA_URL,{cache:"no-store"});if(!response.ok)throw new Error("HTTP "+response.status);
     const data=await response.json();events=Array.isArray(data.events)?data.events:[];
-    populateFilters();renderKPIs(data);renderMonthly();renderYears();renderSectors();renderTable();
+    populateFilters();renderKPIs(data);renderMonthly();renderYears();renderSectors();renderAI();renderTable();
   }catch(err){setText("updated-at","DATA LOAD ERROR");document.getElementById("events-body").innerHTML='<tr><td colspan="6" class="empty-row">The data archive could not be loaded. Please check back later.</td></tr>';console.error("Fired data load failed:",err)}
 }
 init();

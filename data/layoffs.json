@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "project": "Fired Global Tech Layoffs Tracker",
-  "updated_at": "2026-11-25",
+  "updated_at": "2026-11-26",
   "methodology": {
     "deduplication": "One canonical record per distinct layoff event; corroborating source URLs are retained in the event record.",
     "headcount": "Only numeric figures with a source are included in aggregate headcounts. Undisclosed counts are excluded.",
@@ -19,7 +19,9 @@
       "unknown"
     ],
     "dates": "event_date records when the workforce action was announced or took effect, as explicitly described by sources; publication dates belong to individual source records.",
-    "initial_population_note": "Initial population includes Enphase Energy and Skyscanner records verified in the immediately preceding research cycle but not yet published, plus the Oracle European Works Council proposal discovered during catch-up research. The Oracle figure is an unverified reported maximum, not confirmed completed layoffs."
+    "initial_population_note": "Initial population includes Enphase Energy and Skyscanner records verified in the immediately preceding research cycle but not yet published, plus the Oracle European Works Council proposal discovered during catch-up research. The Oracle figure is an unverified reported maximum, not confirmed completed layoffs.",
+    "ai_attribution": "Following the Layoffs.fyi AI tracker scope, include events attributed to AI by the company or credible press: to fund AI investment, replace human work with AI, or respond to AI-driven market disruption. Preserve attribution status; press attribution is not company confirmation.",
+    "benchmark_attribution": "Layoffs.fyi is linked as an external benchmark with attribution. Fired records remain independently normalized and source-linked; benchmark totals are not merged into Fired aggregates."
   },
   "events": [
     {
@@ -87,6 +89,12 @@
           "publication_date": "2026-11-24",
           "source_type": "news_report"
         }
+      ],
+      "ai_attribution_status": "reported",
+      "ai_attribution_basis": "Press coverage linked the proposed workforce reduction to AI-driven changes in travel search. This is press attribution, not a company-confirmed causal statement.",
+      "ai_attribution_sources": [
+        "https://news.stv.tv/east-central/skyscanner-to-cut-around-150-jobs-as-more-holidaymakers-turn-to-ai-for-inspiration",
+        "https://travelgossip.co.uk/latestnews/skyscanner-to-axe-10-of-staff-as-ai-reshapes-travel-search/"
       ]
     },
     {
@@ -124,4 +132,4 @@
       ]
     }
   ]
-}
+}\n

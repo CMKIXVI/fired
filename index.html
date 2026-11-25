@@ -14,7 +14,7 @@
 <body>
   <header class="topbar">
     <a class="brand" href="./" aria-label="Fired home"><img class="brand-logo" src="assets/fired-global-logo.png" alt="Fired.Global"></a>
-    <nav><a class="active" href="#overview">Tracker</a><a href="#latest">Latest layoffs</a><a href="#sectors">Sectors</a><a href="#methodology">Methodology</a></nav>
+    <nav><a class="active" href="#overview">Tracker</a><a href="#latest">Latest layoffs</a><a href="#ai-layoffs">AI layoffs</a><a href="#sectors">Sectors</a><a href="#methodology">Methodology</a></nav>
     <a class="github-link" href="https://github.com/CMKIXVI/fired" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
   </header>
 
@@ -47,6 +47,13 @@
       <section class="panel years-panel">
         <div class="panel-heading"><div><div class="section-kicker">LONG-RANGE VIEW</div><h2>Layoffs by year</h2><p>Historical totals, preserving the original event dates.</p></div></div>
         <div id="year-chart" class="year-chart"><div class="empty-chart">Historical comparison will appear as the archive grows.</div></div>
+      </section>
+
+      <section class="ai-section" id="ai-layoffs">
+        <div class="latest-heading"><div><div class="section-kicker">AI-ATTRIBUTED WORKFORCE IMPACT</div><h2>AI layoffs tracker</h2><p>Events attributed to AI by a company or credible press — including AI investment funding, human work replaced by AI, or AI-driven market disruption.</p></div><div class="result-count" id="ai-result-count">0 EVENTS</div></div>
+        <div class="ai-summary" id="ai-summary"><div><strong id="ai-people">—</strong><span>PEOPLE AFFECTED · REPORTED FIGURES</span></div><div><strong id="ai-events">—</strong><span>AI-ATTRIBUTED EVENTS</span></div></div>
+        <div class="table-wrap"><table><thead><tr><th>COMPANY / ATTRIBUTION</th><th>DATE</th><th>LOCATION</th><th>PEOPLE</th><th>ATTRIBUTION</th><th>SOURCE</th></tr></thead><tbody id="ai-events-body"><tr><td colspan="6" class="empty-row">No AI-attributed events have been classified yet.</td></tr></tbody></table></div>
+        <p class="benchmark-note">Benchmark: <a href="https://layoffs.fyi/ai-layoffs/" target="_blank" rel="noopener noreferrer">Layoffs.fyi AI Layoffs Tracker ↗</a>. Fired uses its stated scope as a classification reference; benchmark totals are not copied into Fired's independently maintained archive.</p>
       </section>
 
       <section class="latest-section" id="latest">
