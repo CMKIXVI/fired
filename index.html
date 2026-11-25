@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#07111f">
+  <meta name="description" content="Fired tracks verified technology-company layoffs worldwide, with source-backed events, company histories and workforce trends.">
+  <title>Fired — Global Tech Layoffs Tracker</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="./" aria-label="Fired home"><span class="brand-mark">F</span><span>FIRED<span class="brand-dot">.</span></span></a>
+    <nav><a class="active" href="#overview">Tracker</a><a href="#latest">Latest layoffs</a><a href="#sectors">Sectors</a><a href="#methodology">Methodology</a></nav>
+    <a class="github-link" href="https://github.com/CMKIXVI/fired" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero" id="overview">
+      <div class="hero-inner">
+        <div class="eyebrow"><span class="pulse"></span> GLOBAL WORKFORCE INTELLIGENCE</div>
+        <h1>Tech layoffs.<br><em>Tracked with evidence.</em></h1>
+        <p class="hero-copy">A source-first record of workforce reductions across technology companies — from global platforms to early-stage startups.</p>
+        <div class="hero-meta"><span>WORLDWIDE COVERAGE</span><span>·</span><span>HISTORICAL ARCHIVE</span><span>·</span><span>HOURLY RESEARCH CYCLE</span></div>
+      </div>
+      <div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div>
+    </section>
+
+    <section class="content-wrap">
+      <div class="section-kicker">THE BIG PICTURE <span id="updated-at">DATA INITIALIZING</span></div>
+      <div class="kpi-grid">
+        <article class="kpi-card kpi-primary"><div class="kpi-label">PEOPLE AFFECTED <span class="info" title="Sum of non-duplicate event headcounts with usable figures">i</span></div><div class="kpi-value" id="total-people">—</div><div class="kpi-foot" id="people-foot">Awaiting verified event records</div></article>
+        <article class="kpi-card"><div class="kpi-label">LAYOFF EVENTS</div><div class="kpi-value" id="total-events">—</div><div class="kpi-foot">Distinct reported events</div></article>
+        <article class="kpi-card"><div class="kpi-label">COMPANIES TRACKED</div><div class="kpi-value" id="total-companies">—</div><div class="kpi-foot">Unique company records</div></article>
+        <article class="kpi-card"><div class="kpi-label">COUNTRIES / REGIONS</div><div class="kpi-value" id="total-regions">—</div><div class="kpi-foot">Geographies represented</div></article>
+      </div>
+
+      <section class="panel trend-panel">
+        <div class="panel-heading"><div><div class="section-kicker">WORKFORCE IMPACT</div><h2>People affected over time</h2><p>Monthly totals from deduplicated events with disclosed headcounts.</p></div><div class="chart-legend"><span class="legend-dot"></span> People affected</div></div>
+        <div id="monthly-chart" class="monthly-chart"><div class="empty-chart">Monthly trend will appear when verified layoff records are added.</div></div>
+        <div class="chart-foot"><span>MONTHLY EVENT DATE</span><span>UNDISCLOSED FIGURES EXCLUDED FROM HEADCOUNT TOTALS</span></div>
+      </section>
+
+      <section class="panel years-panel">
+        <div class="panel-heading"><div><div class="section-kicker">LONG-RANGE VIEW</div><h2>Layoffs by year</h2><p>Historical totals, preserving the original event dates.</p></div></div>
+        <div id="year-chart" class="year-chart"><div class="empty-chart">Historical comparison will appear as the archive grows.</div></div>
+      </section>
+
+      <section class="latest-section" id="latest">
+        <div class="latest-heading"><div><div class="section-kicker">THE LIVE ARCHIVE</div><h2>Latest layoffs</h2><p>Every entry links back to its original reporting or primary evidence.</p></div><div class="result-count" id="result-count">0 EVENTS</div></div>
+        <div class="filter-bar">
+          <label class="search-box"><span>⌕</span><input id="search" type="search" placeholder="Search company, headline, location…"></label>
+          <select id="sector-filter" aria-label="Filter by sector"><option value="">All sectors</option></select>
+          <select id="region-filter" aria-label="Filter by country or region"><option value="">All regions</option></select>
+          <select id="year-filter" aria-label="Filter by year"><option value="">All years</option></select>
+        </div>
+        <div class="table-wrap">
+          <table><thead><tr><th>COMPANY / EVENT</th><th>DATE</th><th>LOCATION</th><th>SECTOR</th><th>PEOPLE</th><th>EVIDENCE</th></tr></thead><tbody id="events-body"><tr><td colspan="6" class="empty-row">No verified layoff events have been published yet. The archive will populate as source-backed records are reviewed.</td></tr></tbody></table>
+        </div>
+      </section>
+
+      <section class="sector-section" id="sectors">
+        <div><div class="section-kicker">WHERE THE IMPACT IS</div><h2>Layoffs by sector</h2><p>Industry classifications are assigned at the company or event level.</p></div>
+        <div id="sector-grid" class="sector-grid"><div class="sector-empty">Sector breakdown will appear as records are added.</div></div>
+      </section>
+
+      <section class="method-panel" id="methodology">
+        <div><div class="section-kicker">HOW FIRED COUNTS</div><h2>Evidence before estimates.</h2><p>One event, one canonical record, multiple corroborating sources. Figures are never silently promoted from estimates to confirmed counts.</p></div>
+        <div class="evidence-list">
+          <div><span class="evidence-badge confirmed">CONFIRMED</span><p>Company announcement, regulatory filing or official government notice.</p></div>
+          <div><span class="evidence-badge reported">REPORTED</span><p>Credible newsroom or independently corroborated employee reporting.</p></div>
+          <div><span class="evidence-badge estimated">ESTIMATED</span><p>Approximation or range reported by a source; uncertainty remains visible.</p></div>
+          <div><span class="evidence-badge undisclosed">UNDISCLOSED</span><p>Layoff event is tracked, but a reliable headcount is not available.</p></div>
+        </div>
+      </section>
+    </section>
+  </main>
+  <footer><div class="footer-brand"><span class="brand-mark">F</span><strong>FIRED<span class="brand-dot">.</span></strong></div><span>Independent workforce intelligence · Source-linked · Corrections welcome</span><a href="https://github.com/CMKIXVI/fired">OPEN DATA & CODE ↗</a></footer>
+  <script src="assets/app.js"></script>
+</body>
+</html>
