@@ -261,8 +261,8 @@
       "percentage_status": "reported",
       "percentage_basis_note": "Financial Express calculates approximately 3.8% against Swiggy's 9,047 employees as of March 31, 2026. This is a Swiggy-wide denominator, not an Instamart-only workforce percentage; 303 contractual staff are separately reported.",
       "figure_status": "reported",
-      "figure_note": "Approximately 340 Instamart roles are reported by Moneycontrol, The Economic Times, Financial Express and other outlets citing people familiar with the restructuring. Swiggy had not responded to Moneycontrol at publication; Inc42 reported that Swiggy declined comment. The figure is not a company-confirmed disclosure.",
-      "company_response_note": "Moneycontrol said Swiggy did not immediately reply to its queries. Inc42 said Swiggy declined to comment. No company-confirmed headcount was located in this cycle.",
+      "figure_note": "Approximately 340 Instamart roles are reported by Moneycontrol, The Economic Times, Financial Express, Reuters and other outlets. Reuters separately cited a person familiar with the matter who said Swiggy would cut 340 roles; Swiggy did not respond to Reuters' request for comment. The figure remains reported, not a company-confirmed disclosure.",
+      "company_response_note": "Moneycontrol said Swiggy did not immediately reply to its queries; Inc42 said Swiggy declined to comment; Reuters also reported that Swiggy did not respond to its request for comment. No company-confirmed headcount was located.",
       "sources": [
         {
           "publisher": "Moneycontrol",
@@ -358,6 +358,15 @@
           "publication_date": "2026-11-27",
           "publication_time": "12:44 IST",
           "source_type": "news_report"
+        },
+        {
+          "publisher": "Reuters",
+          "headline": "India's Swiggy to cut 340 roles at Instamart, source says",
+          "url": "https://www.reuters.com/business/world-at-work/indias-swiggy-cut-340-roles-instamart-source-says-2026-11-27/",
+          "publication_date": "2026-11-27",
+          "publication_time": "16:39 IST",
+          "source_type": "independent_news_report",
+          "source_note": "Reuters reported that a person familiar with the matter said Swiggy would cut 340 Instamart roles. Swiggy did not respond to Reuters' request for comment. This is independent corroboration of the existing event, not a separate event or company-confirmed headcount."
         }
       ],
       "ai_attribution_status": "reported",
