@@ -234,6 +234,130 @@
         "https://www.ft.com/content/ef05b4ab-7944-44ae-ad00-15475f8c1ec9",
         "https://www.reuters.com/technology/sap-considers-least-10000-job-cuts-ai-restructuring-bloomberg-reports-2026-11-26/"
       ]
+    },
+    {
+      "id": "swiggy-instamart-2026-11-27",
+      "company_id": "swiggy",
+      "company": "Swiggy",
+      "headline": "Swiggy's Instamart reportedly cuts around 340 corporate and support roles amid restructuring",
+      "event_date": "2026-11-27",
+      "event_date_note": "Date of the newly reported workforce action. Exact employee notification and last-working dates have not been disclosed; coverage varies between 'set to lay off' and 'has laid off'.",
+      "event_status": "announced",
+      "country_region": "India",
+      "geography_note": "Instamart corporate and support functions; city- or office-level allocation not disclosed. Swiggy is headquartered in Bengaluru, India.",
+      "sector": "Consumer Internet / Quick Commerce",
+      "employees_affected": 340,
+      "headcount_qualifier": "approximately / reported",
+      "percentage_affected": 3.8,
+      "percentage_status": "reported",
+      "percentage_basis_note": "Financial Express calculates approximately 3.8% against Swiggy's 9,047 employees as of March 31, 2026. This is a Swiggy-wide denominator, not an Instamart-only workforce percentage; 303 contractual staff are separately reported.",
+      "figure_status": "reported",
+      "figure_note": "Approximately 340 Instamart roles are reported by Moneycontrol, The Economic Times, Financial Express and other outlets citing people familiar with the restructuring. Swiggy had not responded to Moneycontrol at publication; Inc42 reported that Swiggy declined comment. The figure is not a company-confirmed disclosure.",
+      "company_response_note": "Moneycontrol said Swiggy did not immediately reply to its queries. Inc42 said Swiggy declined to comment. No company-confirmed headcount was located in this cycle.",
+      "sources": [
+        {
+          "publisher": "Moneycontrol",
+          "headline": "MC EXCLUSIVE Swiggy's quick commerce arm Instamart to let go of 340 employees amid AI push",
+          "url": "https://www.moneycontrol.com/news/business/startup/swiggy-s-quick-commerce-arm-instamart-to-let-go-of-340-employees-amid-ai-push-14090143.html",
+          "publication_date": "2026-11-27",
+          "publication_time": "11:17 IST",
+          "updated_time": "11:33 IST",
+          "source_type": "original_report",
+          "source_note": "First published before the previous cycle cutoff; retained as the originating report for the event."
+        },
+        {
+          "publisher": "The Economic Times (ETtech)",
+          "headline": "Swiggy to lay off 340 employees from Instamart arm as part of restructuring",
+          "url": "https://economictimes.indiatimes.com/tech/technology/swiggy-instamart-to-lay-off-340-employees-as-part-of-restructuring-exercise/articleshow/136211121.cms",
+          "publication_date": "2026-11-27",
+          "publication_time": "11:45 IST",
+          "source_type": "news_report"
+        },
+        {
+          "publisher": "Livemint",
+          "headline": "Swiggy's quick commerce arm Instamart to lay off 340 employees amid restructuring, AI push",
+          "url": "https://www.livemint.com/companies/news/swiggys-quick-commerce-arm-instamart-to-lay-off-340-employees-amid-restructuring-ai-push-11795759734638.html",
+          "publication_date": "2026-11-27",
+          "publication_time": "11:48 IST",
+          "source_type": "news_report"
+        },
+        {
+          "publisher": "India Today",
+          "headline": "Swiggy's Instamart plans 340 layoffs as it steps up AI adoption: Report",
+          "url": "https://www.indiatoday.in/jobs/story/swiggy-instamart-layoff-340-job-cuts-losses-competition-ai-adoption-bsc-3048098-2026-11-27",
+          "publication_date": "2026-11-27",
+          "publication_time": "12:16 IST",
+          "source_type": "news_report"
+        },
+        {
+          "publisher": "Entrackr",
+          "headline": "Swiggy’s Instamart to cut 340 roles amid restructuring and GenAI push",
+          "url": "https://entrackr.com/news/swiggys-instamart-to-cut-340-roles-amid-restructuring-and-genai-push-12845148",
+          "publication_date": "2026-11-27",
+          "publication_time": "12:16 IST",
+          "source_type": "original_report"
+        },
+        {
+          "publisher": "Exchange4Media",
+          "headline": "Swiggy to lay off 340 employees from Instamart amid AI adoption",
+          "url": "https://www.exchange4media.com/media-others-news/swiggy-to-lay-off-340-employees-from-instamart-amid-ai-adoption-160749.html",
+          "publication_date": "2026-11-27",
+          "publication_time": "12:14 IST",
+          "source_type": "news_report"
+        },
+        {
+          "publisher": "Business Standard",
+          "headline": "Swiggy's Instamart lays off 340 employees amid wider AI adoption push",
+          "url": "https://www.business-standard.com/amp/companies/news/swiggy-s-instamart-lays-off-340-employees-amid-wider-ai-adoption-push-126112700428_1.html",
+          "publication_date": "2026-11-27",
+          "publication_time": "12:31 IST",
+          "source_type": "news_report",
+          "source_note": "Says Swiggy had yet to respond to the report."
+        },
+        {
+          "publisher": "Financial Express",
+          "headline": "Swiggy’s Instamart lays off 340 amid AI push, shift to inventory model",
+          "url": "https://www.financialexpress.com/business/industry-swiggys-instamart-lays-off-340-amid-ai-push-shift-to-inventory-model-4395160/",
+          "publication_date": "2026-11-27",
+          "publication_time": "12:33 IST",
+          "updated_date": "2026-11-27",
+          "updated_time": "13:23 IST",
+          "source_type": "news_report",
+          "source_note": "Updated after the previous research cutoff; reports 340 roles and calculates approximately 3.8% using Swiggy-wide employee headcount of 9,047."
+        },
+        {
+          "publisher": "The Times of India",
+          "headline": "Months after former Myntra CEO Nandita Sinha took charge, Swiggy’s Instamart lays off about 340 employees",
+          "url": "https://timesofindia.indiatimes.com/technology/tech-news/months-after-former-myntra-ceo-nandita-sinha-took-charge-swiggys-instamart-lays-off-about-340-employees/articleshow/136213301.cms",
+          "publication_date": "2026-11-27",
+          "publication_time": "12:52 IST",
+          "source_type": "news_report",
+          "source_note": "Attributes the figure to The Economic Times and people familiar with the matter."
+        },
+        {
+          "publisher": "Inc42",
+          "headline": "Swiggy Instamart Lays Off 340 Employees Amid Organisational Restructuring",
+          "url": "https://inc42.com/buzz/swiggy-instamart-lays-off-340-employees-amid-organisational-restructuring/",
+          "publication_date": "2026-11-27",
+          "source_type": "original_report",
+          "source_note": "Inc42 says it independently learned of the restructuring; reports that Swiggy declined to comment."
+        },
+        {
+          "publisher": "Free Press Journal",
+          "headline": "Swiggy To Lay Off 340 Instamart Employees Amid AI Adoption: Report",
+          "url": "https://www.freepressjournal.in/business/swiggy-to-lay-off-340-instamart-employees-amid-ai-adoption-report",
+          "publication_date": "2026-11-27",
+          "publication_time": "12:44 IST",
+          "source_type": "news_report"
+        }
+      ],
+      "ai_attribution_status": "reported",
+      "ai_attribution_basis": "Several reports cite generative AI, new ways of working and organisational redesign among the factors. Other stated drivers include competition, losses and the shift to an inventory-led model; no source establishes AI as the sole cause and Swiggy has not confirmed the attribution.",
+      "ai_attribution_sources": [
+        "https://www.moneycontrol.com/news/business/startup/swiggy-s-quick-commerce-arm-instamart-to-let-go-of-340-employees-amid-ai-push-14090143.html",
+        "https://www.financialexpress.com/business/industry-swiggys-instamart-lays-off-340-amid-ai-push-shift-to-inventory-model-4395160/",
+        "https://entrackr.com/news/swiggys-instamart-to-cut-340-roles-amid-restructuring-and-genai-push-12845148"
+      ]
     }
   ]
 }
