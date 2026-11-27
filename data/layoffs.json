@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "project": "Fired Global Tech Layoffs Tracker",
-  "updated_at": "2026-11-26",
+  "updated_at": "2026-11-27",
   "methodology": {
     "deduplication": "One canonical record per distinct layoff event; corroborating source URLs are retained in the event record.",
     "headcount": "Only numeric figures with a source are included in aggregate headcounts. Undisclosed counts are excluded.",
@@ -129,6 +129,101 @@
           "publication_date": "2026-11-25",
           "source_type": "news_report"
         }
+      ]
+    },
+    {
+      "id": "sap-2026-11-26",
+      "company_id": "sap",
+      "company": "SAP",
+      "headline": "SAP reportedly weighs at least 10,000 potential job cuts in an AI-era restructuring",
+      "event_date": "2026-11-26",
+      "event_date_note": "First public reporting date of the proposal; implementation date and final decision date have not been disclosed.",
+      "event_status": "proposed",
+      "country_region": "Global",
+      "geography_note": "Global workforce; country-level allocation has not been disclosed. SAP is headquartered in Walldorf, Germany. Its German labour council negotiated an employment guarantee through 2028.",
+      "sector": "Enterprise Software / Cloud Computing",
+      "employees_affected": 10000,
+      "headcount_qualifier": "at least / proposed",
+      "percentage_affected": 9,
+      "percentage_qualifier": "at least",
+      "percentage_status": "reported",
+      "figure_status": "reported",
+      "figure_note": "Bloomberg reports that SAP is preparing a plan involving at least 10,000 positions, equivalent to at least 9% of its global workforce. The number is not final and may change after labour negotiations. SAP declined to comment on whether job cuts are planned; Reuters said it could not independently verify Bloomberg's report. The 10,000 figure is a reported minimum under consideration, not confirmed completed layoffs.",
+      "company_response_note": "SAP said it continuously reviews its organisation to remain aligned with strategy and customer needs, and declined to comment on whether any job cuts are planned.",
+      "sources": [
+        {
+          "publisher": "Bloomberg News",
+          "headline": "SAP Weighs Cutting at Least 10,000 Positions in AI Restructuring",
+          "url": "https://www.bloomberg.com/news/articles/2026-11-26/sap-weighs-cutting-at-least-10-000-positions-in-ai-restructuring",
+          "publication_date": "2026-11-26",
+          "source_type": "original_report"
+        },
+        {
+          "publisher": "Reuters",
+          "headline": "SAP considers at least 10,000 job cuts in AI restructuring, Bloomberg reports",
+          "url": "https://www.reuters.com/technology/sap-considers-least-10000-job-cuts-ai-restructuring-bloomberg-reports-2026-11-26/",
+          "publication_date": "2026-11-26",
+          "source_type": "news_report",
+          "source_note": "Reuters explicitly said it could not independently verify the Bloomberg report."
+        },
+        {
+          "publisher": "Financial Times",
+          "headline": "SAP explores at least 10,000 job cuts",
+          "url": "https://www.ft.com/content/ef05b4ab-7944-44ae-ad00-15475f8c1ec9",
+          "publication_date": "2026-11-26",
+          "source_type": "news_report"
+        },
+        {
+          "publisher": "The Next Web",
+          "headline": "SAP weighs cutting at least 10,000 jobs in AI restructuring, Bloomberg says",
+          "url": "https://thenextweb.com/news/sap-job-cuts-10000-ai-restructuring-bloomberg",
+          "publication_date": "2026-11-26",
+          "source_type": "news_report"
+        },
+        {
+          "publisher": "The Economic Times (Bloomberg)",
+          "headline": "SAP weighs cutting at least 10,000 positions in AI restructuring",
+          "url": "https://economictimes.indiatimes.com/tech/technology/sap-weighs-cutting-at-least-10000-positions-in-ai-restructuring/articleshow/136207524.cms",
+          "publication_date": "2026-11-27",
+          "updated_date": "2026-11-27",
+          "source_type": "syndicated_report"
+        },
+        {
+          "publisher": "The Straits Times (Bloomberg)",
+          "headline": "SAP weighs cutting at least 10,000 positions in AI restructuring",
+          "url": "https://www.straitstimes.com/business/sap-weighs-cutting-at-least-10000-positions-in-ai-restructuring",
+          "publication_date": "2026-11-27",
+          "updated_date": "2026-11-27",
+          "source_type": "syndicated_report"
+        },
+        {
+          "publisher": "Moneycontrol",
+          "headline": "SAP eyes 10,000 job cuts as Europe's software giant pivots to AI: Report",
+          "url": "https://www.moneycontrol.com/news/business/sap-eyes-10-000-job-cuts-as-europe-s-software-giant-pivots-to-ai-report-14090020.html",
+          "publication_date": "2026-11-27",
+          "source_type": "news_report"
+        },
+        {
+          "publisher": "India Today",
+          "headline": "SAP may lay off 10,000 employees in AI-led restructuring, report says",
+          "url": "https://www.indiatoday.in/jobs/story/sap-may-lay-off-10000-employees-in-ai-led-restructuring-report-says-tchc-3047976-2026-11-27",
+          "publication_date": "2026-11-27",
+          "source_type": "news_report"
+        },
+        {
+          "publisher": "The Business Times (Bloomberg)",
+          "headline": "SAP weighs cutting at least 10,000 positions in AI restructuring",
+          "url": "https://www.businesstimes.com.sg/companies-markets/telcos-media-tech/sk-hynix-starts-work-us4-billion-indiana-ai-memory-hub-expects-shortage-through-2030",
+          "publication_date": "2026-11-27",
+          "source_type": "syndicated_report"
+        }
+      ],
+      "ai_attribution_status": "reported",
+      "ai_attribution_basis": "Bloomberg and Financial Times describe the proposed restructuring as part of SAP's AI-era business transformation and AI-first strategy. This is press attribution, not a company-confirmed statement that AI is the cause of the proposed reductions.",
+      "ai_attribution_sources": [
+        "https://www.bloomberg.com/news/articles/2026-11-26/sap-weighs-cutting-at-least-10-000-positions-in-ai-restructuring",
+        "https://www.ft.com/content/ef05b4ab-7944-44ae-ad00-15475f8c1ec9",
+        "https://www.reuters.com/technology/sap-considers-least-10000-job-cuts-ai-restructuring-bloomberg-reports-2026-11-26/"
       ]
     }
   ]
