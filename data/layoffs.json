@@ -148,7 +148,7 @@
       "percentage_qualifier": "at least",
       "percentage_status": "reported",
       "figure_status": "reported",
-      "figure_note": "Bloomberg reports that SAP is preparing a plan involving at least 10,000 positions, equivalent to at least 9% of its global workforce. The number is not final and may change after labour negotiations. SAP declined to comment on whether job cuts are planned; Reuters said it could not independently verify Bloomberg's report. The 10,000 figure is a reported minimum under consideration, not confirmed completed layoffs.",
+      "figure_note": "Bloomberg reports that SAP is preparing a plan involving at least 10,000 positions, equivalent to at least 9% of its global workforce. The number is not final and may change after labour negotiations. SAP declined to comment on whether job cuts are planned; Reuters said it could not independently verify Bloomberg's report. The 10,000 figure is a reported minimum under consideration, not confirmed completed layoffs. Reuters separately reported on 2026-11-27, citing two people familiar with the matter, that SAP is preparing to cut a sizeable number of jobs and that the works council had not yet been informed; this follow-up did not quantify the cuts or independently confirm Bloomberg's at-least-10,000 figure.",
       "company_response_note": "SAP said it continuously reviews its organisation to remain aligned with strategy and customer needs, and declined to comment on whether any job cuts are planned.",
       "sources": [
         {
@@ -225,6 +225,15 @@
           "publication_time": "10:53 IST",
           "source_type": "secondary_news_report",
           "source_note": "Published after the previous research cycle. NDTV describes roughly 10,000 positions based on media reports; it does not independently verify the underlying Bloomberg-reported proposal or establish a final approved headcount."
+        },
+        {
+          "publisher": "Reuters",
+          "headline": "SAP seeks to cut sizeable number of jobs, sources say",
+          "url": "https://www.reuters.com/business/world-at-work/sap-seeks-cut-sizeable-number-jobs-sources-say-2026-11-27/",
+          "publication_date": "2026-11-27",
+          "publication_time": "14:47 IST",
+          "source_type": "independent_follow_up",
+          "source_note": "Reuters separately reported, citing two people familiar with the matter, that SAP is preparing to cut a sizeable number of jobs. Reuters said the works council had not yet been informed. This follow-up does not quantify the cuts or independently confirm Bloomberg's at-least-10,000 figure."
         }
       ],
       "ai_attribution_status": "reported",
