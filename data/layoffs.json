@@ -211,11 +211,11 @@
           "source_type": "news_report"
         },
         {
-          "publisher": "The Business Times (Bloomberg)",
-          "headline": "SAP weighs cutting at least 10,000 positions in AI restructuring",
-          "url": "https://www.businesstimes.com.sg/companies-markets/telcos-media-tech/sk-hynix-starts-work-us4-billion-indiana-ai-memory-hub-expects-shortage-through-2030",
+          "publisher": "The Indian Express",
+          "headline": "10,000 jobs at risk as SAP restructures business around AI",
+          "url": "https://indianexpress.com/article/technology/10000-jobs-at-risk-as-sap-restructures-business-around-ai-10980474/",
           "publication_date": "2026-11-27",
-          "source_type": "syndicated_report"
+          "source_type": "news_report"
         }
       ],
       "ai_attribution_status": "reported",
